@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joyería Artesanal</title>
+    <style>
+        /* CSS Global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display';
+            background-color: #f8f1ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #5e3c6f;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Playfair Display';
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d1b3e0;
+        }
+
+        /* Sección hero (inicio) */
+        .hero {
+            height: 100vh;
+            background-color: #f5e1ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .intro-text h1 {
+            font-family: 'Georgia', serif;
+            font-size: 48px;
+            color: #4b2e5e;
+        }
+
+        .intro-text p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #6f477d;
+        }
+
+        /* Carrusel de imágenes */
+        .carousel {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            animation: fade 10s infinite;
+        }
+
+        .carousel img {
+            max-width: 400px;
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Secciones */
+        .section {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: justify;
+        }
+
+        .section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4b2e5e;
+        }
+
+        .section p {
+            font-family: 'Playfair Display';
+            font-size: 25px;
+            margin: 20px 0;
+            color: #6f477d;
+        }
+
+        /* Quiénes somos */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content .logo img {
+            width: 600px;
+            margin-bottom: 20px;
+        }
+
+        /* Productos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Redes Sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links img {
+            width: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #5e3c6f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li><a href="#productos">Nuestros productos</a></li>
+                <li><a href="#redes-sociales">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="home" class="hero">
+        <div class="intro-text">
+           <h1><br><br>Idol Gems</hi> 
+          <br> <p>Accesorios hechos a mano: pulseras personalizadas, collares, separadores de libros y accesorios para celulares.</p>
+        </div>
+        <div class="carousel">
+            <img src="+.jpg" alt="Joya 1">
+            <img src="collar.jpg" alt="Joya 2">
+            <img src="pulseras.jpg" alt="Joya 3">
+<br><br><br>
+        </div>
+    </section>
+<!-- Sección de Quiénes somos -->
+    <section id="quienes-somos" class="section">
+        <h2>¿Quiénes somos?</h2>
+        <div class="content">
+            <div class="logo">
+               <br><br> <img src="banner.jpg" alt="Logo de la empresa">
+            </div>
+            <div class="about-us">
+                <p><br>Somos una empresa dedicada a la creación de joyería artesanal hecha a mano con amor y dedicación. Creemos en la exclusividad y personalización de cada pieza para que se ajuste a tu estilo único. Productos basados en los gustos actuales adolescentes y sus intereses. 
+<br> En nuestro taller de joyería artesanal, creamos piezas únicas pensadas especialmente para adolescentes que buscan destacar con su estilo personal. Cada accesorio es hecho a mano con materiales de alta calidad y un diseño moderno, accesible y lleno de personalidad. 
+<br> Sabemos que los detalles hacen la diferencia, por eso nuestras pulseras, collares y accesorios para celulares están inspirados en las últimas tendencias juveniles, combinando lo artesanal con lo actual.
+<br> Con precios accesibles, buscamos que la moda no sea un lujo, sino una forma de expresión al alcance de todos.Sus creadores son los mencionados en la imagen.
+</p>
+          </div>
+    </section>
+<!-- Sección de Productos -->
+    <section id="productos" class="section">
+        <h2>Nuestros productos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <h3>Accesorios para celulares</h3>
+                <img src="celular1.jpg" alt="Accesorio para celular">
+            </div>
+            <div class="product">
+                <h3>Pulseras personalizadas</h3>
+                <img src="pulseras 1.jpg" alt="Pulseras personalizadas">
+            </div>
+            <div class="product">
+                <h3>Collares</h3>
+                <img src="collar1.jpg" alt="Collares">
+            </div>
+            <div class="product">
+                <h3>Separadores de libros</h3>
+                <img src="libros 1.jpg" alt="Separadores de libros">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Redes Sociales -->
+    <section id="redes-sociales" class="section">
+        <h2>Síguenos en redes sociales</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/idol_gems.oficial/"><img src="instagram.jpg" alt="Instagram"></a>
+            <a href="https://pin.it/3CxV0AvFp"><img src="pinterest.jpg" alt="Pinterest"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joyería Artesanal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
